@@ -17,7 +17,13 @@ public class HomeController : Controller
     {
         return View();
     }
-
+[HttpPost]
+    public IActionResult Index(string Name, string Address)
+        {
+            string strOutput = "PDP xin chao " +  Name + " den tu " + Address;
+            ViewBag.Message = strOutput;
+            return View();
+        }
     public IActionResult Privacy()
     {
         return View();
