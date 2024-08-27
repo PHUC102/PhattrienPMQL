@@ -18,12 +18,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\phattrienphanmemquanly\DemoMvc
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/phattrienphanmemquanly/DemoMvc/Views/Home/Demo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZW1vLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/phattrienphanmemquanly/DemoMvc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/phattrienphanmemquanly/DemoMvc/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/phattrienphanmemquanly/DemoMvc/Views/PDP/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUERQXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/phattrienphanmemquanly/DemoMvc/Views/Shared/Error.cshtml]
