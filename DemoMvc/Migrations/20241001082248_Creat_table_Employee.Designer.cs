@@ -2,6 +2,7 @@
 using DemoMvc.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -9,12 +10,39 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DemoMvc.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241001082248_Creat_table_Employee")]
+    partial class Creat_table_Employee
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.8");
+
+            modelBuilder.Entity("DemoMvc.Models.Employee", b =>
+                {
+                    b.Property<string>("CCCD")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("GioiTinh")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("HoTen")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("QueQuan")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Tuoi")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("CCCD");
+
+                    b.ToTable("Employee");
+                });
 
             modelBuilder.Entity("DemoMvc.Models.PDP", b =>
                 {
@@ -32,33 +60,6 @@ namespace DemoMvc.Migrations
                     b.ToTable("PDP");
                 });
 
-            modelBuilder.Entity("DemoMvc.Models.Person", b =>
-                {
-                    b.Property<string>("CCCD")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasMaxLength(8)
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("HoTen")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("QueQuan")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("CCCD");
-
-                    b.ToTable("Person");
-
-                    b.HasDiscriminator().HasValue("Person");
-
-                    b.UseTphMappingStrategy();
-                });
-
             modelBuilder.Entity("DemoMvc.Models.Student", b =>
                 {
                     b.Property<int>("StudentId")
@@ -74,20 +75,6 @@ namespace DemoMvc.Migrations
                     b.HasKey("StudentId");
 
                     b.ToTable("Student");
-                });
-
-            modelBuilder.Entity("DemoMvc.Models.Employee", b =>
-                {
-                    b.HasBaseType("DemoMvc.Models.Person");
-
-                    b.Property<string>("GioiTinh")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("Tuoi")
-                        .HasColumnType("INTEGER");
-
-                    b.HasDiscriminator().HasValue("Employee");
                 });
 #pragma warning restore 612, 618
         }

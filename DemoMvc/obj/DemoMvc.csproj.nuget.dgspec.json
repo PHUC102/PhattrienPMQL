@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\phattrienphanmemquanly\\DemoMvc\\DemoMvc\\DemoMvc.csproj": {}
+    "D:\\Downloads\\2\\PhattrienPMQL\\DemoMvc\\DemoMvc.csproj": {}
   },
   "projects": {
-    "D:\\phattrienphanmemquanly\\DemoMvc\\DemoMvc\\DemoMvc.csproj": {
+    "D:\\Downloads\\2\\PhattrienPMQL\\DemoMvc\\DemoMvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\phattrienphanmemquanly\\DemoMvc\\DemoMvc\\DemoMvc.csproj",
+        "projectUniqueName": "D:\\Downloads\\2\\PhattrienPMQL\\DemoMvc\\DemoMvc.csproj",
         "projectName": "DemoMvc",
-        "projectPath": "D:\\phattrienphanmemquanly\\DemoMvc\\DemoMvc\\DemoMvc.csproj",
+        "projectPath": "D:\\Downloads\\2\\PhattrienPMQL\\DemoMvc\\DemoMvc.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\phattrienphanmemquanly\\DemoMvc\\DemoMvc\\obj\\",
+        "outputPath": "D:\\Downloads\\2\\PhattrienPMQL\\DemoMvc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"

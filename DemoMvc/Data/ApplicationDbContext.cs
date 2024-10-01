@@ -16,5 +16,7 @@ namespace DemoMvc.Data
 
         public DbSet<DemoMvc.Models.Student> Student { get; set; } = default!;
         public DbSet<DemoMvc.Models.PDP> PDP { get; set; } = default!;
+        public DbSet<DemoMvc.Models.Employee> Employee { get; set; } = default!;
+        public DbSet<DemoMvc.Models.Person> Person { get; set; } = default!;
     }
 }
